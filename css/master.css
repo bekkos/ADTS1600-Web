@@ -1,0 +1,21 @@
+/* 
+HTML box modellen kommer med predefinerte margin's og padding's
+som vi fjerner helt øverst i MASTER.css filen slik at vi kan style
+alle HTMl objektene akkurat slik vi vil uten at denne standaren kommer
+i veien.
+"*" er selectoren for alle HTML objektene.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Her velger vi html taggen og body tagen og sier at begge skal være
+100% av skjermens høyde.
+*/
+
+html, body {
+    height: 100%;
+}
+
