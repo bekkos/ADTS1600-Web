@@ -3,3 +3,8 @@
 All css som er spesifikk til forsiden skal ligge her.
 */
 
+.main-wrapper {
+    width: 100%;
+    height: 100%;
+    
+}
