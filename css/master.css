@@ -19,3 +19,43 @@ html, body {
     height: 100%;
 }
 
+/*
+NAVIGASJON
+
+Her bruker vi nav taggen for å bygge en navigasjonsbar. nav-taggen har ingen
+standard css verdier og funker akkurat som en div eller section, eneste
+forskjellen er at den gjør det enklere for programmer å lese av
+hva som er hva, viktig mtp. inkluderende design og optimisering for blant annet
+blinde.
+
+Høyden på nav'en er "7vh", vh betyr viewport height, så vi bruker altså 7 av 100
+deler av skjermens totale høyde. Vi kunne også brukt 7%, men da hadde vi brukt
+7% av høyden til body taggen som igjen er satt til skjermens totale høyde dermed
+er det lettere å rote det til senere i koden. Best practice er derfor å bruke
+"vh".
+
+*/
+
+nav {
+    height: 7vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* TITTELEN/LOGOEN */
+nav h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 5px;
+}
