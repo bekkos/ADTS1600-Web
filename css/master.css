@@ -66,3 +66,31 @@ nav ul li {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.3rem;
 }
+
+
+/* MEDIA QUERIES */
+
+/* Mobil */
+@media (max-width: 480px) {
+    
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    
+}
+
+/* Små dataskjermer */
+@media (max-width: 1024px) {
+    
+}
+
+/* Vanlige dataskjermer */
+@media (max-width: 1200px) {
+    
+}
+
+/* Store dataskjermer */
+@media (max-width: 1201px) {
+    
+}

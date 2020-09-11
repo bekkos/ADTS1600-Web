@@ -57,3 +57,43 @@ slik at vi kan enkelt resize alt på engang om ønskelig.
     padding: 0 20%;
     text-align: center;
 }
+
+
+/* MEDIA QUERIES */
+
+/* Mobil */
+@media (max-width: 480px) {
+    
+}
+
+/* Tablets */
+@media (max-width: 769px) {
+    .fp-image-forground-content h3 {
+        font-size: 1.2em !important;
+    }
+    
+    .fp-image-forground-content p {
+        font-size: 0.7em !important;
+    }
+}
+
+/* Små dataskjermer */
+@media (max-width: 1054px) {
+    .fp-image-forground-content h3 {
+        font-size: 1.8em;
+    }
+    
+    .fp-image-forground-content p {
+        font-size: 1em;
+    }
+}
+
+/* Vanlige dataskjermer */
+@media (max-width: 1200px) {
+    
+}
+
+/* Store dataskjermer */
+@media (max-width: 1201px) {
+    
+}
