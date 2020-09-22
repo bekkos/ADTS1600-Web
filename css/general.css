@@ -17,6 +17,10 @@ a {
     color: inherit;
 }
 
+a .title {
+    font-weight: 600;
+}
+
 .title {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;

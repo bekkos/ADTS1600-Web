@@ -67,7 +67,7 @@
     .image-wrapper h2 {
         width: 60%;
     }
-  }
+}
 
   @media screen and (max-width: 660px) {
     .image-wrapper h2 {

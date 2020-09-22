@@ -1,0 +1,67 @@
+.wrapper {
+    width: 60%;
+    margin: 3vh auto;
+}
+
+form {
+    margin-top: 10vh;
+}
+
+input {
+    width: 49%;
+    margin: 0.5vh 0;
+    height: 3vh;
+    font-size: clamp(1rem, 1vw, 2rem);;
+}
+
+.cb {
+    width: 10%;
+}
+
+#text {
+    width: 100%;
+    margin: 2vh 0;
+    font-size: clamp(1rem, 1vw, 2rem);;
+}
+
+#button {
+    display: block;
+    height: 5vh;
+    padding: 0 5px;
+    font-size: clamp(1rem, 1vw, 2rem);
+    font-weight: 600;
+    margin: 5vh 0;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+   
+}
+
+#button:focus { 
+    border: 2px solid black;
+    outline: none;
+ }
+
+ #button:hover {
+    opacity: 0.8;
+ }
+
+ /* Media Queries */
+@media screen and (max-width: 1100px) {
+    input {
+        width: 100%;
+    }
+}
+
+  @media screen and (max-width: 660px) {
+    input {
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .wrapper {
+        width: 90%;
+    }
+  }
