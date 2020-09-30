@@ -2,7 +2,6 @@
     width: 100%;
     height: calc(100% - 80px);
     min-height: 650px;
-    background-color: red;
     
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,6 +59,9 @@
     margin: 4vh 0;
 }
 
+.title-text {
+    
+}
 
 
 /* Media Queries */
