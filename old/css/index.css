@@ -1,0 +1,78 @@
+.image-wrapper {
+    width: 100%;
+    height: calc(100% - 80px);
+    min-height: 650px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.image-wrapper h2 {
+    color: white;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-weight: 500;
+    width: 40%;
+    text-align: center;
+    display: block;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
+}
+
+.image-wrapper button {
+    display: block;
+    height: 5vh;
+    padding: 0 5px;
+    font-size: clamp(1rem, 1vw, 2rem);
+    font-weight: 600;
+    margin: 5vh 0;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+   
+}
+
+.image-wrapper button:focus { 
+    border: 2px solid black;
+    outline: none;
+ }
+
+ .image-wrapper button:hover {
+    opacity: 0.8;
+ }
+
+
+.content-wrapper {
+    width: 40%;
+    /* endre høyde før ferdigstilling */
+    height: 100vh;
+    margin: 2vh auto;
+}
+
+.content-wrapper h3, .content-wrapper p {
+    margin: 4vh 0;
+}
+
+.title-text {
+    
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .image-wrapper h2 {
+        width: 60%;
+    }
+}
+
+  @media screen and (max-width: 660px) {
+    .image-wrapper h2 {
+        width: 80%;
+    }
+  }

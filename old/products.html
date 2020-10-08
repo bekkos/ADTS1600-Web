@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <title>Technology & Wearables</title>
+</head>
+<body>
+    <nav>
+        <h1><a href="./index.html">T&W</a></T></h1>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="image-carousel">
+        
+        <div class="slide-container">
+
+            
+            <div class="slides fade">
+            <div class="number">1 / 3</div>
+            <img src="./img/slideshow/3.jpg" style="width:100%">
+            </div>
+        
+            <div class="slides fade">
+            <div class="number">2 / 3</div>
+            <img src="./img/slideshow/2.jpg" style="width:100%">
+            </div>
+        
+            <div class="slides fade">
+            <div class="number">3 / 3</div>
+            <img src="./img/slideshow/1.jpeg" style="width:100%">
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section class="content-wrapper">
+        <h1 class="title">The Smart Mask</h1>
+        <p>
+            Smart mask will come with a speaker on the right side and a microphone on the left side. 
+            There will be a filter on the inside where you can take it off and on, to meet requirments 
+            in hygiene and sanitation.
+            After the covid-19 situation, we have seen the use of masks and the problems that come 
+            from the use of masks. Our solution: The smart mask gives the user an easy way to 
+            communicate with others while also minimizing your chance of getting infected. 
+            The product is a simple-looking mask, with technological aspects that will change the 
+            mask-game.
+            Our main focus and desired outcome for the product we want to develop is that the 
+            mask is user-friendly for everyone. Our top priority is safety for our users and 
+            reusability are key for our product to succeed, therefore we will strive to ensure 
+            that our product fulfil these requirements and such is our desirable outcome. 
+            Today’s masks are suitable for a small part of the population. By customizing it, 
+            more people will feel comfortable using one.
+        </p>
+        <p>
+            2020 has been marked by a pandemic. This pandemic has shown us that the need of good, safe and easy to use facemasks 
+            is higher than ever before. As a society, we were caught off-guard and the pandemic shone light on the many problems 
+            with today’s face-mask production and their lacking quality and ease of use. Our flagship product works to solve this 
+            issue by allowing the user a much more comfortable and safe product which will allow for fluent communication and much 
+            less risk of infection due to not having to remove the mask and/or touch your face. We will do this by giving the mask 
+            a speaker and a mic inside so that you can easily communicate with one another. We also want to make it easy hygienically 
+            to be able to change the inside of the mask without changing the whole mask. This is done by changing only the innermost 
+            layers of the mask and keeping the outside of the mask. We want to make the mask more suitable for everyday life, while 
+            still keeping it hygienic and minimize spreading the virus. We want to make the mask meet the users need for them to be 
+            willing to wear it, by making it more wearable yet still comply the requirements of the government.
+        </p>
+        <a href="./contact.html"><button>Contact Us</button></a>
+    </section>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var dots = document.getElementsByClassName("dot");
+        var slides = document.getElementsByClassName("slides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[slideIndex-1].className += " active";
+        slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
