@@ -110,6 +110,11 @@
         dots[slideIndex-1].className += " active";
         slides[slideIndex-1].style.display = "block";
         }
+
+        setInterval(function() {
+            slideIndex++;
+            currentSlide(slideIndex);
+        },4000);
     </script>
 
 </body>
