@@ -26,6 +26,11 @@ a .title {
     font-weight: 500;
     font-size: clamp(2rem, 3vw, 3rem);
     text-align: center;
+    
+}
+
+.margin-bot {
+    margin-bottom: 5vh;
 }
 
 .white {
